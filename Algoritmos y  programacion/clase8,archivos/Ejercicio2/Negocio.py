@@ -216,7 +216,7 @@ def MostrarReservasCanceladas():
 
 def MostrarReservas():
     if len(Reservas) == 0:
-        print("No existen autos en la base de datos")
+        print("No existen reservas en la base de datos")
     else:
         for i in Reservas:
             print(i)
@@ -247,15 +247,15 @@ def BuscarReservaPatente(Patente):
     if count == 0:
         print(f"No existe ninguna reserva asociada a la patente: {Patente}")
 
-def BuscarReservaCliente(Cliente):
+def BuscarReservaCliente(id):
     count=0
     if len(Reservas) == 0:
         print("No existen reservas en la base de datos")
     else:
         for i in Reservas:
-            if i.Cliente == Cliente:
+            if i.Cliente.IdC == id:
                 print(i)
                 count +=1
                 print("Operacion exitosa")
     if count == 0:
-        print(f"No existe ninguna reserva asociada al Cliente: {Cliente}")
+        print(f"No existe ninguna reserva asociada a ese ID de cliente: {id}")
