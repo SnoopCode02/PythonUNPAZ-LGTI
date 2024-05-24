@@ -1,0 +1,3 @@
+1, Catalina, molina, otawa 555, 1173696657, 1
+2, Pedro, ayala, piñero 333, 1182786579, 1
+3, Carolina, perez, coro 345, 1143573575, 1
